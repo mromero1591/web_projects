@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+*/
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    background-color: #586994;
+    margin-bottom: 20px;
+
+}
+
+h1 {
+    width: 100%;
+    margin-left: 4%;
+    color: #FFFF;
+}
+
+picture {
+    margin-left: 4%;
+}
+
+img {
+    width: 100%;
+    image-orientation: initial;
+}
+/* Mobile */
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 4%;
+}
+
+.col-sm {
+    flex: 0 0 92%;
+}
+
+/* Table */
+@media only screen and (min-width: 480px) { 
+    header {
+        align-items: center;
+    } 
+    .col-sm {
+        flex: 0 0 44%;
+    }  
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    .col-sm {
+        flex: 0 0 20%;
+    }    
+    h1 {
+        text-align: start;
+    }
+}
+
+  
